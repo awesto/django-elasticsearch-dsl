@@ -21,6 +21,7 @@ from elasticsearch_dsl.field import (
     Long,
     Nested,
     Object,
+    SearchAsYouType,
     Short,
     Keyword,
     Text
@@ -221,6 +222,10 @@ class KeywordField(DEDField, Keyword):
 
 
 class TextField(DEDField, Text):
+    pass
+
+
+class SearchAsYouTypeField(DEDField, SearchAsYouType):
     pass
 
 
